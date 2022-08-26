@@ -1,3 +1,22 @@
+Metadata-Version: 2.1
+Name: duneanalytics
+Version: 1.2.0
+Summary: Unofficial library for Dune Analytics.
+Home-page: https://github.com/itzmestar/duneanalytics
+Author: Tarique Anwer
+Author-email: itzmetariq@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # Dune Analytics
 
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
@@ -11,10 +30,6 @@
 
 The library can be used to fetch the table data from `python` backend.
 
-### Install Python Library 
-```
-git+https://github.com/abhalawat/duneanalytics.git
-```
 #### Disclaimer: Use at your own risk! 
 It may not work for some/all urls.
 
@@ -87,3 +102,5 @@ result_id = dune.query_result_id(query_id=5508)
 # fetch query result
 data = dune.query_result(result_id)
 ```
+
+

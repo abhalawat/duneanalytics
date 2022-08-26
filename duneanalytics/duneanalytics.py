@@ -77,8 +77,8 @@ class DuneAnalytics:
         self.session.post(auth_url, data=form_data)
         self.auth_refresh = self.session.cookies.get('auth-refresh')
         if self.auth_refresh is None:
-            logger.warning("Login Failed!")
-
+            # logger.warning("Login Failed!")
+            raise Exception("Login Credential Not Valid")
     def fetch_auth_token(self):
         """
         Fetch authorization token for the user
@@ -92,7 +92,8 @@ class DuneAnalytics:
             if self.token is None:
                 logger.warning("Fetching Token Failed!")
         else:
-            logger.error(response.text)
+            raise Exception(response.text)
+            # logger.error(response.text)
 
     def query_result_id(self, query_id):
         """
